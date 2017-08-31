@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="Java 面向对象 方法的定义方法的重载方法的递归调用。">
+<meta name="description" content="Java 面向对象 方法的定义、方法的重载、方法的递归调用。类的定义、 类的声明、类的使用">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java面向对象">
 <meta property="og:url" content="http://yoursite.com/2017/08/31/java面向对象/index.html">
 <meta property="og:site_name" content="朱星星个人博客">
-<meta property="og:description" content="Java 面向对象 方法的定义方法的重载方法的递归调用。">
+<meta property="og:description" content="Java 面向对象 方法的定义、方法的重载、方法的递归调用。类的定义、 类的声明、类的使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-31T02:41:04.767Z">
+<meta property="og:updated_time" content="2017-08-31T02:44:29.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java面向对象">
-<meta name="twitter:description" content="Java 面向对象 方法的定义方法的重载方法的递归调用。">
+<meta name="twitter:description" content="Java 面向对象 方法的定义、方法的重载、方法的递归调用。类的定义、 类的声明、类的使用">
 
 
 
@@ -367,7 +367,7 @@
 
       
         <h1 id="Java-面向对象"><a href="#Java-面向对象" class="headerlink" title="Java 面向对象"></a>Java 面向对象</h1><blockquote>
-<p>方法的定义<br>方法的重载<br>方法的递归调用。</p>
+<p>方法的定义、方法的重载、方法的递归调用。<br>类的定义、 类的声明、类的使用</p>
 </blockquote>
 <a id="more"></a>
 <h2 id="方法的定义"><a href="#方法的定义" class="headerlink" title="方法的定义"></a>方法的定义</h2><p>方法就是一段可以重复的代码段。</p>
@@ -376,10 +376,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">public void tell(int i)&#123;</div><div class="line">    </div><div class="line">&#125; </div><div class="line">public void tell (int i,int y)&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>方法的返回值类型，void类型不需要返回值，其他的类型都需要返回值。</p>
 <h2 id="方法的递归调用"><a href="#方法的递归调用" class="headerlink" title="方法的递归调用"></a>方法的递归调用</h2><p>一种特殊逇调用方式，就是方法自己调自己。</p>
-<h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><blockquote>
-<p>类的定义<br>类的声明<br>类的使用</p>
-</blockquote>
-<h2 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h2><p>类是对某一事物的描述，是抽象的。概念上的意义，对象是实际存在的该类事物的每一个个体，也被称为对象或实例。</p>
+<h1 id="类"><a href="#类" class="headerlink" title="类"></a>类</h1><h2 id="类的定义"><a href="#类的定义" class="headerlink" title="类的定义"></a>类的定义</h2><p>类是对某一事物的描述，是抽象的。概念上的意义，对象是实际存在的该类事物的每一个个体，也被称为对象或实例。</p>
 <h2 id="类的声明"><a href="#类的声明" class="headerlink" title="类的声明"></a>类的声明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">class Person&#123;</div><div class="line">    public String name；</div><div class="line">    public int age；</div><div class="line">    public void tell() &#123;</div><div class="line">        System.out.println(&quot;姓名：&quot;+name+&quot;，年齡：&quot;+age);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="类的使用"><a href="#类的使用" class="headerlink" title="类的使用"></a>类的使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public static void main(String[] args) &#123;</div><div class="line">        Person person;//声明对象,开辟栈内存空间</div><div class="line">        person=new Person();//开辟堆内存空间</div><div class="line">        person.name=&quot;张三&quot;;</div><div class="line">        person.age=10;</div><div class="line">        person.tell();</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 <p>通过关键字 <code>new</code> 开辟空间，实例化操作。</p>
