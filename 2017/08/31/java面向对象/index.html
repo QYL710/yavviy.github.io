@@ -104,7 +104,7 @@
 <meta property="og:description" content="方法的定义、方法的重载、方法的递归调用。类的定义、 类的声明、类的使用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ovjig1zuj.bkt.clouddn.com/yavviy.jpg">
-<meta property="og:updated_time" content="2017-08-31T12:39:59.648Z">
+<meta property="og:updated_time" content="2017-08-31T12:44:01.937Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java面向对象">
 <meta name="twitter:description" content="方法的定义、方法的重载、方法的递归调用。类的定义、 类的声明、类的使用">
@@ -401,11 +401,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">class Person&#123;</div><div class="line">    private int age;</div><div class="line"></div><div class="line">    public int getAge() &#123;</div><div class="line">        return age;</div><div class="line">    &#125;</div><div class="line">    public void setAge(int age) &#123;</div><div class="line">        this.age = age;</div><div class="line">    &#125;</div><div class="line">    public void tell() &#123;</div><div class="line">        System.out.println(&quot;年龄：&quot;+getAge());</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">public class PrivateDemo01 &#123;</div><div class="line">    public static void main(String[] args) &#123;</div><div class="line">        Person person=new Person();</div><div class="line">        person.setAge(160);</div><div class="line">        person.tell();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>扩展类的功能。</p>
 <h2 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h2><p>方法的重载，对象的多样性。</p>
-<h1 id="常见异常"><a href="#常见异常" class="headerlink" title="常见异常"></a>常见异常</h1><h2 id="数组越界异常"><a href="#数组越界异常" class="headerlink" title="数组越界异常"></a>数组越界异常</h2><p>ArrayIndexOutOfBoundsException</p>
-<h2 id="数组格式化异常"><a href="#数组格式化异常" class="headerlink" title="数组格式化异常"></a>数组格式化异常</h2><p>NumberFormatException</p>
-<h2 id="算数异常"><a href="#算数异常" class="headerlink" title="算数异常"></a>算数异常</h2><p>ArithmeticException</p>
+<h1 id="常见异常"><a href="#常见异常" class="headerlink" title="常见异常"></a>常见异常</h1><h2 id="数组越界异常"><a href="#数组越界异常" class="headerlink" title="数组越界异常"></a>数组越界异常</h2><p> <code>ArrayIndexOutOfBoundsException</code></p>
+<h2 id="数组格式化异常"><a href="#数组格式化异常" class="headerlink" title="数组格式化异常"></a>数组格式化异常</h2><p> <code>NumberFormatException</code></p>
+<h2 id="算数异常"><a href="#算数异常" class="headerlink" title="算数异常"></a>算数异常</h2><p> <code>ArithmeticException</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">public class Exception &#123;</div><div class="line">    public static void main(String[] args) &#123;</div><div class="line">        int a=10;</div><div class="line">        int b=0;</div><div class="line">        int temp=0;</div><div class="line">        try &#123;</div><div class="line">            temp=a/b;</div><div class="line">        &#125; catch (ArithmeticException e) &#123;</div><div class="line">            System.out.println(&quot;除数不能为0&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="空指针异常"><a href="#空指针异常" class="headerlink" title="空指针异常"></a>空指针异常</h2><p>NullPointerException</p>
+<h2 id="空指针异常"><a href="#空指针异常" class="headerlink" title="空指针异常"></a>空指针异常</h2><p> <code>NullPointerException</code></p>
 
       
     </div>
